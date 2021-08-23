@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h1>User Login</h1>
+    <h1>Cola User</h1>
     <form v-on:submit.prevent="onLogin">
-      <p>Username: <input type="text" v-model="email" /></p>
-      <p>Password: <input type="password" v-model="password" /></p>
+      <p>ชื่อ Cola: <input type="text" v-model="email" /></p>
+      <p>สไตล์ Cola: <input type="password" v-model="password" /></p>
       <p><button type="submit">Login</button></p>
     </form>
   </div>

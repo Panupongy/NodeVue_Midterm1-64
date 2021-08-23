@@ -1,19 +1,19 @@
 <template>
 <div>
-    <h1>Edit User</h1>
+    <h1>แก้ไข Cola</h1>
     <form v-on:submit.prevent = "editUser">
-        <p>name: <input type="text" v-model="user.name"></p>
-        <p>lastname: <input type="text" v-model="user.lastname"></p>
-        <p>email: <input type="text" v-model="user.email"></p>
-        <p>password: <input type="text" v-model="user.password"></p>
-        <p><button type="submit">edit user</button></p>
+        <p>ชื่อ Cola: <input type="text" v-model="user.name"></p>
+        <p>รส: <input type="text" v-model="user.lastname"></p>
+        <p>บริษัท: <input type="text" v-model="user.email"></p>
+        <p>สไตล์ Cola: <input type="text" v-model="user.password"></p>
+        <p><button type="submit">แก้ไข Cola</button></p>
     </form>
     <hr>
     <div>
-        <p>name: {{user.name}}</p>
-        <p>lastname: {{user.lastname}}</p>
-        <p>email: {{user.email}}</p>
-        <p>password: {{user.password}}</p>
+        <p>ชื่อ Cola: {{user.name}}</p>
+        <p>รส: {{user.lastname}}</p>
+        <p>บริษัท: {{user.email}}</p>
+        <p>สไตล์ Cola: {{user.password}}</p>
     </div>
 </div>
 </template>

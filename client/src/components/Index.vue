@@ -1,27 +1,27 @@
 <template>
   <div>
-    <h1>Get All Users</h1>
+    <h1>Cola</h1>
     <div v-if="users.length">
-      <h4>จำนวนผู้ใช้งาน {{ users.length }}</h4>
+      <h4>ประเภท Cola {{ users.length }}</h4>
       <p>
         <button v-on:click="navigateTo('/user/create')">
-            สร้างผู้ใช้งาน
+            เพิ่มประเภท Cola มี
           </button>
       </p>
       <div v-for="user in users" v-bind:key="user.id">
-        <p>id: {{ user.id }}</p>
-        <p>ชื่อ-นามสกุล: {{ user.name }} - {{ user.lastname }}</p>
-        <p>Email: {{ user.email }}</p>
-        <p>Password: {{ user.password }}</p>
+        <p>อันดับ: {{ user.id }}</p>
+        <p>ชื่อ Cola: {{ user.name }} - {{ user.lastname }}</p>
+        <p>บริษัท: {{ user.email }}</p>
+        <p>สไตล์ Cola : {{ user.password }}</p>
         <p>
           <button v-on:click="navigateTo('/user/' + user.id)">
-            ดูข้อมูลผู้ใช้
+            ดูข้อมูล Cola
           </button>
           <button v-on:click="navigateTo('/user/edit/' + user.id)">
-            แก้ไขข้อมูล
+            แก้ไขข้อมูล Cola
           </button>
           <button v-on:click="deleteUser(user)">
-            ลบข้อมูล
+            ลบข้อมูล Cola
           </button>
         </p>
         <hr />
